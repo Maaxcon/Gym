@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="font.css">
+</head>
+<body>
+    <div class="head_main_back">
+        <header>
+            <div>
+                <img class="logo" src="photo/head_logo.png" alt="">
+            </div>
+            <div>
+                <ul class="all_list_head">
+                    <li class="list_head"><a href="">Головна</a></li>
+                    <li class="list_head"><a href="#title_main_second">Абонементи</a></li>
+                    <li class="list_head"><a href="#title-personal">Персонал</a></li>
+                    <li class="list_head"><a href="#title_main_poslygi">Послуги</a></li>
+                    <li class="list_head"><a href="#fotter">Контакти</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+           
+              <div class="typing-demo">
+                Тренажерний зал Kurylchuk
+              </div>
+
+<div class="wrapper">
+        <div class="container">
+          <input type="radio" name="slide" id="c1" checked>
+          <label for="c1" class="card">
+            <div class="row">
+              <div class="icon">1</div>
+              <div class="description">
+                <h4>Kurylchuk gym</h4>
+           
+              </div>
+            </div>
+          </label>
+    
+          <input type="radio" name="slide" id="c2">
+          <label for="c2" class="card">
+            <div class="row">
+              <div class="icon">2</div>
+              <div class="description">
+                <h4>Digital Technology</h4>
+
+              </div>
+            </div>
+          </label>
+    
+          <input type="radio" name="slide" id="c3">
+          <label for="c3" class="card">
+            <div class="row">
+              <div class="icon">3</div>
+              <div class="description">
+                <h4>Globalization</h4>
+
+              </div>
+            </div>
+          </label>
+    
+          <input type="radio" name="slide" id="c4">
+          <label for="c4" class="card">
+            <div class="row">
+              <div class="icon">4</div>
+              <div class="description">
+                <h4>New technologies</h4>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+
+      <section class="main_second">
+        <div id="title_main_second" class="title_main_second">АБОНЕМЕНТИ</div>
+
+        <div class="all_box">
+          <div class="first_four_box">
+            <div class="services">
+              <h3>MORNING</h3>
+              <h4>8:00-12:00</h4>
+              <h3>Every day</h3>
+              <button onclick="showTable()">Детальніше</button>
+            </div>
+            <div class="services">
+              <h3>DAY</h3>
+              <h4>12:00-17:00</h4>
+              <h3>Every day</h3>
+              <button onclick="showTable()">Детальніше</button>
+            </div>
+            <div class="services">
+              <h3>EVENING</h3>
+              <h4>17:00-22:00</h4>
+              <h3>Every day</h3>
+              <button onclick="showTable()">Детальніше</button>
+            </div>
+            <div class="services">
+              <h3>ONE-TIME VISIT</h3>
+              <h4>8:00-22:00</h4>
+              <h3>Every day</h3>
+              <button onclick="showTable()">Детальніше</button>
+            </div>
+          </div>
+          <div class="second_four_box">
+            <div class="services">
+              <h3>TEN-TIME VISIT</h3>
+              <h4>8:00-22:00</h4>
+              <h3>Every day</h3>
+              <button onclick="showTable()">Детальніше</button>
+            </div>
+            <div class="services">
+              <h3>GROUP TRAINING</h3>
+              <h4>16:00-18:00</h4>
+              <h3>Monday - Friday</h3>
+              <button onclick="showTable()">Детальніше</button>
+            </div>
+            <div class="services">
+              <h3>PERSONAL TRAINING</h3>
+              <h4>8:00-22:00</h4>
+              <h3>Monday - Sunday</h3>
+              <button onclick="showTable()">Детальніше</button>
+            </div>
+            <div class="services">
+              <h3>FULL</h3>
+              <h4>8:00-22:00</h4>
+              <h3>Every day</h3>
+              <button onclick="showTable()">Детальніше</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="price">
+          <table>
+        <tr>
+            <th class="krest" colspan="4"><img src="photo/х.png" alt="" onclick="closeTable()"></th>
+        </tr>
+        <tr>
+            <th>АБОНЕМЕНТИ</th>
+            <th>1 МІСЯЦЬ<br>ГРН</th>
+            <th>3 МІСЯЦІ<br>ГРН</th>
+            <th>6 МІСЯЦІВ<br>ГРН</th>
+        </tr>
+        <tr>
+            <td>Day<br>Денний без вихідних<br>12:00 – 17:00</td>
+            <td>780</td>
+            <td>1540</td>
+            <td>2560</td>
+        </tr>
+        <tr class="orange-row">
+            <td>Morning<br>ранок<br>08:00 – 17:00</td>
+            <td>1220</td>
+            <td>2440</td>
+            <td>3720</td>
+        </tr>
+        <tr>
+            <td>Full<br>повний<br>08:00 – 21:00</td>
+            <td>1540</td>
+            <td>3900</td>
+            <td>5280</td>
+        </tr>
+        <tr>
+            <td>РАЗОВИЙ ВІЗИТ<br>08:00 – 21:00</td>
+            <td colspan="3">Разове відвідування: 250</td>
+        </tr>
+        <tr>
+            <td>ДЕСЯТИРАЗОВИЙ ВІЗИТ<br>08:00 – 21:00</td>
+            <td colspan="3">10 відвідувань: 2000</td>
+        </tr>
+        <tr>
+            <td>ГРУПОВІ ТРЕНУВАННЯ</td>
+            <td colspan="3">10 відвідувань: 2500</td>
+        </tr>
+    </table>
+
+        </div>
+      </section>
+
+      <section class="personall">
+        <div id="title-personal" class="title-personal">Персонал</div>
+
+        <div class="div-fourth-cards-personal">
+          <div class="card-personal-1"></div>
+          <div class="card-personal-2"></div>
+          <div class="card-personal-3"></div>
+          <div class="card-personal-4"></div>
+        </div>
+
+        <div class="div-fourth-name-personal">
+            <div class="name-personal-1">Олександр Ковальчук</div>
+            <div class="name-personal-2">Катерина Мельник</div>
+            <div class="name-personal-3">Олена Демченко</div>
+            <div class="name-personal-4">Микита Бондаренко</div>
+        </div>  
+        <div class="div-eight-cards-personal">
+          <div class="card-personal-5"></div>
+          <div class="card-personal-6"></div>
+          <div class="card-personal-7"></div>
+          <div class="card-personal-8"></div>
+        </div>
+        <div class="div-fourth-name-personal">
+            <div class="name-personal-1">Дмитро Левченко</div>
+            <div class="name-personal-2">Василь Гончарук</div>
+            <div class="name-personal-5">Юн Су Мін</div>
+            <div class="name-personal-6">Віталій Шевченко</div>
+        </div>  
+        
+      </section>
+
+   <section class="section-poslygi">
+    <div id="title_main_poslygi" class="title_main_poslygi">Послуги</div>
+    <div class="services-grid">
+        <div class="service-item">
+            <img src="photo_serv/FIRST_POSL.jpg" alt="Тяжелая атлетика">
+            <div class="service-title">ТЯЖКА АТЛЕТИКА</div>
+        </div>
+        <div class="service-item">
+            <img src="photo_serv/CROSFIT_SECOND.jpg" alt="Кроссфит">
+            <div class="service-title">КРОСФІТ</div>
+        </div>
+        <div class="service-item">
+            <img src="photo_serv/BOX.jpg" alt="Бокс">
+            <div class="service-title">БОКС</div>
+        </div>
+        <div class="service-item">
+            <img src="photo_serv/INDIVUDUAL.jpg" alt="Індивідуальні тренування">
+            <div class="service-title">ІНДИВІДУАЛЬНІ ТРЕНУВАННЯ</div>
+        </div>
+        <div class="service-item">
+            <img src="photo_serv/GROUP.jpg" alt="Групові заняття">
+            <div class="service-title">ГРУПОВІ ТРЕНУВАННЯ</div>
+        </div>
+        <div class="service-item">
+            <img src="photo_serv/REABILIT.jpg" alt="Реабілітація">
+            <div class="service-title">РЕАБІЛІТАЦІЯ</div>
+        </div>
+        <div class="service-item">
+            <img src="photo_serv/woman.jpg" alt="Заняття для беременных">
+            <div class="service-title">ЗАНЯТТЯ ДЛЯ ВАГІТНИХ</div>
+        </div>
+        <div class="service-item">
+            <img src="photo_serv/MASSAGE.jpg" alt="Массаж">
+            <div class="service-title">МАСАЖ</div>
+        </div>
+    </div>
+</section>
+
+
+
+        </main>
+        <footer id="fotter">
+          <div class="all_foot">
+            <img class="foot_logo" src="photo/head_logo.png" alt="">
+            <div class="information">
+              <div class="fot_p">Контакти</div>
+              <div class="foot_subpara"><a href="emailto:">Email: kurilchuk.maks2005@gmail.com</a></div>
+              <div class="foot_subpara"><a href="tel:"> Tel: 380730530795</a></div>
+              <div class="foot_subpara">TikTok: KurilchukGYMT</div>
+            </div>
+
+            <div class="geoloc">
+              <div class="fot_p">Розташування</div>
+              <div class="foot_subpara">М.Черкаси вул. Бульвар Шевченка 52</div>
+              <div class="foot_subpara">М.Черкаси вул. Смілянська 41</div>
+              <div class="foot_subpara">М.Черкаси вул. Сумгаїтьська 2</div>
+            </div>
+            <div class="media">
+              <div class="fot_p">Соціальні мережі</div>
+              <a href=""><img class="face" src="icons_mes/free-icon-facebook-733547.png" alt=""></a>
+              <a href=""><img class="insta" src="icons_mes/free-icon-instagram-2111463.png" alt=""></a>
+              <a href=""><img class="tw" src="icons_mes/free-icon-twitter-1384049.png" alt=""></a>
+              <a href=""><img class="viber" src="icons_mes/free-icon-viber-3938039.png" alt=""></a>
+              <a href=""><img class="you" src="icons_mes/free-icon-youtube-1384060.png" alt=""></a>
+            </div>
+          </div>
+          <hr class="hr">
+          <div class="fot_fot">Cпортивний зал KURYLCHUK GYM ©2024 • Всі права захищені</div>
+        </footer>
+    </div>
+
+
+
+    <script>
+      function showTable(){
+        document.querySelector("table").style.visibility = "visible";
+        document.querySelector(".all_box").style.filter ="blur(2px)";
+        document.querySelector("header").style.filter ="blur(2px)";
+      }
+
+      function closeTable(){
+         document.querySelector("table").style.visibility ="hidden";
+         document.querySelector(".all_box").style.filter ="blur(0px)";
+         document.querySelector("header").style.filter ="blur(0px)";
+      }
+    </script>
+</body>
+</html>
