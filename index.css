@@ -41,7 +41,7 @@ header {
 .list_head a:hover {
     color: linear-gradient(90deg, rgb(109, 92, 161) 33%, rgb(8, 9, 12) 79%);
     text-shadow: 2px 2px 5px rgba(46, 30, 169, 0.3);
-
+    scale: 1.55
 }
 
 .list_head:hover {
@@ -237,7 +237,6 @@ input:checked+label .description {
 
 .services:not(:first-child) {
     margin-left: 120px;
-
 }
 
 .services h3 {
@@ -307,7 +306,7 @@ input:checked+label .description {
     border-radius: 50%;
 }
 
-.services button:hover {
+button:hover {
     animation: jello-horizontal 0.9s both;
 }
 
@@ -447,15 +446,69 @@ tr:hover:not(:first-child) {
 }
 
 .card-personal-1 {
+    position: relative;
     background-image: url('personal/personal_1.jpg');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
+
+.overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: top 0.5s ease-in-out;
+
+}
+
+.card_buuton {
+    width: 14vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 12vh;
+    margin-left: 0;
+    margin-left: 40px;
+    background-color: rgb(204, 204, 246);
+    color: #160c0c;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgb(201, 185, 233) inset,
+        0px 5px 10px rgba(5, 5, 5, 0.212),
+        0px -10px 10px rgb(145, 129, 129) inset;
+    border-radius: 5px;
+    font-weight: 500;
+    
+}
+
+
+
+.card-personal-1:hover .overlay,
+.card-personal-2:hover .overlay,
+.card-personal-3:hover .overlay,
+.card-personal-4:hover .overlay,
+.card-personal-5:hover .overlay,
+.card-personal-6:hover .overlay,
+.card-personal-7:hover .overlay,
+.card-personal-8:hover .overlay {
+    top: 0;
+}
+
+
+
 
 .card-personal-2 {
     background-image: url('personal/personal_2.jpg');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    position: relative;
 
 }
 
@@ -463,36 +516,48 @@ tr:hover:not(:first-child) {
     background-image: url('personal/personal_3.jpg');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .card-personal-4 {
     background-image: url('personal/personal_4.jpg');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .card-personal-5 {
     background-image: url('personal/personal_5.jpg');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .card-personal-6 {
     background-image: url('personal/personal_6.jpg');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .card-personal-7 {
     background-image: url('personal/personal_7.jpg');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .card-personal-8 {
     background-image: url('personal/personal_8.jpg');
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .div-fourth-name-personal {
@@ -589,7 +654,7 @@ tr:hover:not(:first-child) {
 }
 
 footer {
-    height: 35vh;
+    height: 35%;
     width: 100%;
     background-color: #b2b0b0;
 }
