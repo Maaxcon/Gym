@@ -107,7 +107,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 15px;
-    width: 70px;
+    width: 50px;
 }
 
 .card>.row>.description {
@@ -122,6 +122,17 @@ header {
     transition-delay: .3s;
     width: 520px;
 }
+
+.logo_menu {
+    display: flex;
+}
+
+.menu_icon {
+    width: 32px;
+    height: 32px;
+    display: none;
+}
+
 
 
 .description h4 {
@@ -240,7 +251,7 @@ input:checked+label .description {
 }
 
 .services h3 {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     transition: font-size 0.5s ease;
     font-family: "Oswald", sans-serif;
@@ -264,7 +275,7 @@ input:checked+label .description {
 }
 
 .services:hover h3, h4 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -354,9 +365,13 @@ table {
     visibility: hidden;
     border: 0;
     overflow: hidden;
+    z-index: 1000;
 
 
 }
+
+
+
 
 
 th, td {
@@ -366,7 +381,6 @@ th, td {
     background-color: rgba(240, 248, 255, 0.974);
     border: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.095);
-
 
 }
 
@@ -394,6 +408,7 @@ tr:hover:not(:first-child) {
     text-align: right;
     margin-left: 715px;
     margin-top: -5px;
+
 }
 
 .krest img {
@@ -484,7 +499,7 @@ tr:hover:not(:first-child) {
         0px -10px 10px rgb(145, 129, 129) inset;
     border-radius: 5px;
     font-weight: 500;
-    
+
 }
 
 
@@ -740,4 +755,49 @@ hr {
     transform: scale(1.06);
     transition: all 0.5s;
     cursor: pointer;
+}
+
+.list_head img {
+    height: 28px;
+    width: 28px;
+    position: absolute;
+}
+
+.list_head {
+    position: relative;
+    display: inline-block;
+}
+
+.language-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    list-style: none;
+    background-color: rgb(133, 128, 128);
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #585656;
+}
+
+.ten_visit,
+.personal_train {
+    font-size: 10px;
+}
+
+
+
+
+.tel_ad {
+    display: none;
 }
